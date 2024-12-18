@@ -1,4 +1,24 @@
 <?php
+
+/**
+ * PHP MySQL Singleton Class
+ * 
+ * This repository provides a PHP class to handle MySQL database connections and queries using the mysqli extension. 
+ * It implements the Singleton design pattern to ensure only one instance of the database connection exists throughout 
+ * the application lifecycle. This class is easy to integrate and includes methods for common database operations.
+ * 
+ * Features:
+ * - Singleton Design Pattern: Ensures a single database connection instance.
+ * - Automatic Parameter Binding: Prevents SQL injection by binding parameters securely.
+ * - Fetch Methods: Fetch all rows or a single row.
+ * - Transaction Management: Includes beginTransaction, commit, and rollback methods.
+ * - Last Insert ID: Retrieve the last inserted record ID.
+ * - Character Set Support: Defaults to utf8mb4, configurable via constants.
+ * 
+ * Author: Ideaglory
+ * Repository: https://github.com/ideaglory/php-db-mysql-singleton
+ */
+
 class Database
 {
     private $host;
